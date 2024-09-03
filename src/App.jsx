@@ -1,12 +1,19 @@
-import React, { Component } from 'react'
-import Home from './Component/Home'
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import Hooks from './Components/Hooks'
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    
+    <div>
+      <Hooks/>
+    </div>
+      
+  )
 }
+
+export default App
