@@ -1,0 +1,97 @@
+/* Basic styling for the form container */
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Centered form title */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Label styling */
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Input field styling */
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #4CAF50;
+}
+
+/* Error message styling */
+span {
+  color: red;
+  font-size: 14px;
+  margin-top: -8px;
+  display: block;
+}
+
+/* Dropdown styling */
+select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #4CAF50;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Placeholder input for dynamic fields */
+input[placeholder] {
+  margin-top: 15px;
+}
+
+/* Aligning the form to the center */
+center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
