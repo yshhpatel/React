@@ -1,0 +1,110 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+input {
+  width: calc(33.33% - 10px);
+  padding: 12px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #23bad1;
+  outline: none;
+}
+
+button {
+  display: inline-block;
+  background-color: #1b7bdb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0739f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #16afe2;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color: #f9f9f9;
+  font-size: 0.95rem;
+}
+
+tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}
+
+tr:hover td {
+  background-color: #f3f9ff;
+}
+
+@media (max-width: 768px) {
+  input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
