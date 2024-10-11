@@ -1,0 +1,18 @@
+.main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span{
+  font-size: 50px;
+
+}
+
+
+button{
+  height: 60px;
+  margin: 40px;
+  width: 150px;
+}
