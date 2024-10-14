@@ -1,0 +1,88 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the form */
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Form Styling */
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #6c63ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff6f61, #ff9472);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff9472, #ff6f61);
+    transform: translateY(-2px);
+}
+
+button:active {
+    background: linear-gradient(45deg, #ff6f61, #ff9472);
+    transform: scale(0.98);
+}
+
+/* Delete Button Styling */
+.delete-button {
+    background: linear-gradient(45deg, #ff4e50, #f9d423);
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.delete-button:hover {
+    background: linear-gradient(45deg, #f9d423, #ff4e50);
+}
+
+.delete-button:active {
+    background: linear-gradient(45deg, #ff4e50, #f9d423);
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
