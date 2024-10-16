@@ -1,0 +1,164 @@
+:root {
+  --primary-color: #007bff;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --input-border-color: #ced4da;
+  --table-border-color: #dee2e6;
+  --border-radius: 16px; /* Increased for a more rounded look */
+  --input-padding: 12px;
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#h1 {
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+table {
+  width: 85%;
+  margin: 15px auto;
+  border-collapse: collapse;
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+th {
+  font-size: 18px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px;
+}
+
+td {
+  font-size: 16px;
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid var(--table-border-color);
+}
+
+td:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+input {
+  height: 45px; /* Taller for a more modern feel */
+  width: 100%;
+  max-width: 350px;
+  margin: 12px 0;
+  padding: var(--input-padding);
+  font-size: 15px;
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--border-radius); /* Increased rounding */
+  box-shadow: var(--box-shadow);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  box-shadow: inset 0 2px 6px rgba(0, 123, 255, 0.4);
+}
+
+button {
+  font-size: 14px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#bt1 {
+  background-color: var(--primary-color);
+}
+
+#bt1:hover {
+  background-color: #0056b3;
+}
+
+#bt2 {
+  background-color: var(--danger-color);
+}
+
+#bt2:hover {
+  background-color: #c82333;
+}
+
+#bt3 {
+  background-color: var(--success-color);
+}
+
+#bt3:hover {
+  background-color: #218838;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Form Container with new design */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow); /* 3D shadow for the form */
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 400px; /* Make form smaller */
+}
+
+.form-container input {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.form-container button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table, input, .form-container {
+    width: 100%;
+  }
+
+  td:last-child {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
