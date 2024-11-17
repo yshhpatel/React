@@ -1,0 +1,379 @@
+/* Universal Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f4ff, #dfe7f2);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container Styles */
+.signup-container,
+.signIn-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  text-align: center;
+  margin: 20px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.signup-container h2,
+.signIn-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+.button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #0056b3, #004080);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.link {
+  color: #007bff;
+  font-size: 14px;
+  margin-top: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Dashboard Table Styles */
+.task-container {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.task-container thead {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.task-container th,
+.task-container td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 16px;
+}
+
+.task-container th {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.task-container tr:last-child td {
+  border-bottom: none;
+}
+
+.task-container tr:hover {
+  background: #f9f9f9;
+}
+
+.task-container .cbutton {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Action Buttons */
+.edit-btn,
+.delete-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-btn {
+  background: #28a745;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container,
+  .signIn-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .task-container th,
+  .task-container td {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .task-container .cbutton {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+/* Universal Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #eef2f9, #dfe7f2);
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Task Manager Container */
+.signup-container {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.signup-container h2 {
+  font-size: 26px;
+  color: #333333;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.signup-container input:focus {
+  border-color: #1d72b8;
+  box-shadow: 0 0 10px rgba(29, 114, 184, 0.3);
+  outline: none;
+}
+
+.signup-container .task-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #1d72b8, #155a96);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signup-container .task-btn:hover {
+  background: linear-gradient(135deg, #155a96, #0e3d68);
+}
+
+.signup-container .task-btn:active {
+  transform: scale(0.96);
+}
+
+/* Task Table */
+.task-container {
+  margin: 30px auto;
+  width: 90%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.task-container thead {
+  background: #007bff;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.task-container th,
+.task-container td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 15px;
+}
+
+.task-container th {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.task-container tr:last-child td {
+  border-bottom: none;
+}
+
+.task-container tr:hover {
+  background: #f9f9f9;
+}
+
+.task-container .cbutton {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* Action Buttons */
+.edit-btn,
+.delete-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.edit-btn {
+  background: #28a745;
+}
+
+.edit-btn:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+.delete-btn {
+  background: #dc3545;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
+    width: 95%;
+  }
+
+  .task-container th,
+  .task-container td {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .task-container .cbutton {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
