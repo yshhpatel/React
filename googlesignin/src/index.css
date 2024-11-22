@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #333); /* Gradient background */
+  color: #e0e0e0; /* Light text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Signup Container */
+.signup-container {
+  background: linear-gradient(135deg, #2a2a2a, #444); /* Gradient container */
+  width: 380px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Enhanced shadow */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-container:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+}
+
+/* Heading */
+.signup-container h1 {
+  color: #ffffff; /* White heading */
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #6f42c1, #ff6ec4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #333;
+  color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #ff6ec4; /* Vibrant border on focus */
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 110, 196, 0.7); /* Glow effect */
+}
+
+/* Signup Button */
+.signup-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #6f42c1, #ff6ec4);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.signup-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #ff6ec4, #6f42c1); /* Gradient reverse on hover */
+}
+
+/* Google Sign-in Button */
+.google-signin {
+  margin-top: 25px;
+  padding: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #555, #777);
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.google-signin img {
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+}
+
+.google-signin:hover {
+  background: linear-gradient(135deg, #777, #999); /* Lighter gradient on hover */
+  transform: translateY(-3px);
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa; /* Light gray text */
+}
+
+.footer a {
+  color: #ff6ec4; /* Vibrant purple-pink links */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #6f42c1; /* Purple on hover */
+  text-decoration: underline;
+}
