@@ -1,0 +1,5 @@
+/* Global CSS to ensure default cursor is visible */
+body {
+    cursor: auto;
+  }
+  

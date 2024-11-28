@@ -1,0 +1,17 @@
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.selectingcolor{
+    /* color: #008cff; */
+    color: black;
+    
+}
+body{
+    cursor: auto !important;
+}
+
+html {
+    scroll-behavior: smooth !important;
+  }

@@ -1,0 +1,231 @@
+@font-face {
+    font-family: space;
+    src: url(../assets/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: space;
+    /* background-color: blue; */
+        /* background: linear-gradient(to right, #062139 ,#062139, #050D17 ); */
+
+}
+header{
+    width: 100%;
+    height: 100px;
+    /* position: fixed; */
+    /* top: 0px; */
+    z-index: 100;
+    background-color: #062037;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+
+}
+nav{
+    width: 85%;
+    /* position: fixed; */
+    /* top: 0; */
+    /* background-color: red; */
+    display: flex;
+    height: inherit;
+}
+.logo{
+    height: inherit;
+    font-family: space;
+    display: flex;
+    align-items: center;
+    width: 45%;
+    /* background-color: aqua; */
+}
+.logo h1{
+    /* font-size: 2.667vw; */
+    font-size: 40px;
+    color: white;
+
+}
+.nav-items{
+    width: 55%;
+    /* background-color: yellow; */
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items ul{
+    list-style-type: none;
+    display: flex;
+    /* background-color: blue; */
+    height: inherit;
+    margin: 0 !important;
+    align-items: center;
+}
+/* .nav-items a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    font-family: space;
+    font-weight: 600;
+} */
+.nav-items ul li{
+    /* background-color: red; */
+    width: initial;
+    color: white;
+    font-size: 14px;
+    color: white;
+    font-family: space;
+    font-weight: 600;
+}
+
+.nav-items ul li:not(:first-child) {
+    margin-left: 2.667vw; 
+}
+
+.talk-btn{
+    height: 55px;
+    font-size: 16px;
+    font-size: space;
+    color: white;
+    background-color: #0986ff;
+    border: 0;
+    width: 150px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color ease .3s;
+}
+.talk-btn:hover{
+    background-color: transparent;
+    border: 2px solid white;
+}
+.nav-items li{
+    position: relative;
+}
+.nav-items li:first-child::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    top: 25px;
+    background-color: white;
+}
+
+
+.nav-items li:not(:first-child)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 25px;
+    width: 0;
+    height: 1.5px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-items li:not(:first-child):hover::after {
+    width: 100%;
+}
+
+
+.menu-bar{
+    height: 45px;
+    width: 55px;
+    /* background-color: red; */
+    /* background-color: #050D17; */
+    border-radius: 5px;
+    border: 1px solid hsla(0, 0%, 100%, 0.2) !important;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.bar{
+    height: 3px;
+    width: 20px;
+    background-color: white;
+}
+
+
+.menu-bar .bar:not(:first-child){
+    /* padding-top: 20px; */
+    margin-top: 5px;
+}
+
+
+
+.side-bar{
+    background-color: #000;
+    height: fit-content;
+    padding: 20px;
+    width: 100%;
+    top: 100px;
+    z-index: 100;
+    padding-left: 20px;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.2) !important;
+    position: fixed;
+
+
+}
+
+
+.side-bar ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-direction: column;
+}
+.side-bar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+.side-bar ul li:not(:first-child){
+    padding-top: 15px;
+    /* margin-inline: 20px; */
+}
+
+
+
+@media (max-width: 1200px) {
+    .logo{
+        width: 30%;
+    }
+    .nav-items{
+        width: 70%;
+    }
+}
+
+
+
+
+@media (max-width: 991px) {
+    .menu-bar{
+        display: flex;
+    }
+    .nav-items{
+        justify-content: end;
+    }
+    .nav-items ul{
+        display: none;
+    }
+    .talk-btn{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+}

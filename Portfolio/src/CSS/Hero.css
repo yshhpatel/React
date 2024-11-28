@@ -1,0 +1,252 @@
+@font-face {
+    font-family: space;
+    src: url(../assets/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: space;
+    /* width: 100%; */
+    /* height: 100vh; */
+}
+
+.hero{
+    background: linear-gradient(to right, #062139 ,#062139, #050D17);
+    /* height: 110vh;  */
+    padding-top: 150px;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+}
+.hero-in{
+    width: 85%;
+    height: inherit;
+    /* background-color: red; */
+    display: flex;
+}
+
+.section-2{
+    height: inherit;
+    width: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.section-2 img{
+    /* height: 650px; */
+    height: 550px;
+    /* height: 10vw; */
+    width: 600px;
+}
+
+.section-1{
+    height: inherit;
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+     /* align-items: end;      */
+     justify-content: end;
+     padding-bottom: 100px;
+
+}
+.name-hero{
+    height: fit-content;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #06355f;
+
+}
+.span-yash{
+    color: white;
+    letter-spacing: 3px;
+
+}
+.section-1 h1{
+    /* font-size: 70px; */
+    font-size: clamp(45px, 5vw, 70px);
+    color: white;
+    font-weight: 600;
+}
+
+.section-1 .typing{
+    /* font-size: 70px; */
+    font-size: clamp(45px, 5vw, 70px);
+
+    color: #0c86fe;
+    font-weight: 600;
+}
+
+.section-1 p{
+    /* font-size: 20px; */
+    font-size: clamp(16px, 2vw, 20px);
+    color: white;
+    padding-top: 20px;
+}
+
+.buttons{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    height: 80px;
+    /* background-color: red; */
+}
+.frist-btn{
+    width: fit-content;
+    height: inherit;
+    /* background-color: blue; */
+}
+.frist-btn button{
+    width: 190px;
+    cursor: pointer;
+    height: 55px;
+    background-color: #0888fc;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    font-family: space;
+    border-radius: 30px;
+    transition: background-color ease .5s;
+}
+.frist-btn button i{
+    color: white;
+    padding-left: 10px;
+}
+.frist-btn button:hover{
+    background-color: #000;
+    border: 2px solid white;
+}
+.second-btn{
+    height: inherit;
+    width: fit-content;
+    /* background-color: yellow; */
+    padding-left: 25px;
+}
+.social{
+    display: flex;
+}
+.medias{
+    height: 50px;
+    width: 50px;
+    margin-inline: 5px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: violet; */
+    border-radius: 50%;
+}
+
+.medias i{
+    color: white;
+}
+
+#facebook{
+    background-color: #157aef;
+}
+#instagram{
+    background-color: #f36698;
+}
+#linkedin-in{
+    background-color: #1673b1;
+}
+#facebook:hover,#instagram:hover,#linkedin-in:hover{
+    background-color: black;
+    transition-duration: 0.4s;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    
+}
+
+
+
+
+@media (max-width: 991px) {
+    .hero-in{
+        display: block;
+    }
+    .section-1{
+        width: 100%;
+    }
+    .section-2{
+        width: 100%;
+    }
+    .section-2 img{
+        height: 65.59vw;
+    }
+  
+    
+}
+
+
+
+
+@media (max-width: 576px) {
+    .buttons{
+        width: 100%;
+        margin-top: 30px;
+        display: block;
+        height: fit-content;
+    }
+    .frist-btn{
+        width: 100%;
+    }
+    .frist-btn button{
+        width: 100%;
+    }
+    .second-btn{
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+    }
+    .section-1 h1{
+        font-size: clamp(35px, 5vw, 70px);
+      
+    }
+    
+    .section-1 .typing{
+        font-size: clamp(35px, 5vw, 70px);
+    
+    }
+    
+    .section-1 p{
+        font-size: clamp(14px, 2vw, 20px);
+    }
+    .section-2 img{
+        height: 100vw;
+    }
+    .name{
+        height: fit-content;
+        border-radius: 3px;
+        width: fit-content;
+        margin-bottom: 10px;
+        background-color: #06355f;
+    
+    }
+    .span-yash{
+        color: white;
+        letter-spacing: 3px;
+        font-size: 12px;
+    
+    }
+    .section-1{
+        padding-bottom: 50px;
+    }
+}
+

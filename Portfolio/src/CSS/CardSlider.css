@@ -1,0 +1,172 @@
+@font-face {
+  font-family: space;
+  src: url(../assets/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  font-family: space;
+  cursor: auto;
+
+  /* background-color: blue; */
+      background: linear-gradient(to right ,#052849, #051B30 );
+
+}
+
+.main{
+  height: fit-content;
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  padding: 100px 0px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.slide{
+  height: fit-content;
+  width: 100%;
+  /* background-color: red; */
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slide-box{
+  height: fit-content;
+  width: 450px;
+  display: flex;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+}
+.slide-box img{
+  width:  100%;
+  border-radius: 8px;
+  height: auto;
+  object-fit: fill;
+}
+.sliders{
+  width: 100%;
+}
+.slick-slide > div{
+  margin:0px 10px;
+}
+.project-information{
+  height: 50px;
+  display: flex;
+  /* background-color: red; */
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.project-information h5{
+  font-size: 20px;
+  /* padding-bottom: 5px; */
+  /* background-color: aqua; */
+}
+.info-1{
+  height: inherit;
+  width: 100%;
+  /* background-color: red; */
+  /* background-color: aqua; */
+}
+.info-2{
+  height: inherit;
+  width: fit-content;
+  /* background-color: blue; */
+}
+.cri{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #008cff;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+.cri:hover{
+  background-color: black;
+  transition-duration: 0.6s;
+}
+.info-1 span{
+  color: #707476;
+  font-size: 14px;
+}
+
+
+
+
+
+.name-slider{
+  height: fit-content;
+  border-radius: 3px;
+  width: fit-content;
+  padding: 5px;
+  align-self: flex-start;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #06355f;
+
+}
+.span-slide{
+  color: white;
+  letter-spacing: 3px;
+
+}
+.main-sliders{
+  /* background-color: violet; */
+  width: 85%;
+  height: inherit;
+}
+.main-sliders h2{
+  font-size: clamp(30px, 2vw, 40px);
+  color: white;
+  padding-top: 5px;
+}
+
+
+
+
+.slick-dots li button:before {
+  color: #008cff !important;
+  padding-top: 20px;
+}
+
+
+
+@media (max-width : 991px) {
+  
+
+  .slide-box{
+    background-color: white;
+    /* min-height: 350px; */
+    width: 600px;
+    min-width: 300px;
+  }
+  
+
+}
+
+
+@media (max-width : 576px) {
+  
+
+  .slide-box{
+    background-color: white;
+    /* min-height: 350px; */
+    width: 600px;
+    min-width: 170px;
+  }
+  
+  .slick-slide > div{
+    /* margin:0px 200px; */
+    margin-inline: 20px;
+  }
+}
